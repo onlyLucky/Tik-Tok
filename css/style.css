@@ -1,0 +1,192 @@
+
+body {
+    height:100%;
+    background-color:#161823;
+    position:relative;
+    min-width:1200px
+}
+html, body, .container {
+    width:100%;
+    height:100%;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container .video-bg{
+    width: 100%;
+    height: 100%;
+}
+
+.container .video-bg .video-tvc{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.container .content .header{
+    height: 120px;
+    line-height: 120px;
+    overflow: hidden;
+}
+.header .header-left{
+    height: 100%;
+    margin-left: 80px;
+    float: left;
+}
+.header .header-left a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.header .header-right{
+    float: right;
+    margin-right: 150px;
+}
+.header .header-right .header-links{
+    list-style: none;
+}
+.header .header-right .header-links .header-link-item{
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: center;
+}
+.header-link-item>a{
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    vertical-align: center;
+}
+.header-link-item img{
+    position: relative;
+    top:6px;
+}
+.header-link-item .unmute{
+    width: 18px;
+    height: 18px;
+    background-image: url("../public/img/unmute.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+    opacity: 1;
+}
+.header .header-right .header-links .header-link-item .mute{
+    opacity: 0;
+}
+.content .middle{
+    width: 500px;
+    position: absolute;
+    right: 150px;
+    top: 40%;
+}
+.content .middle .slogan{
+    width: 450px;
+    float: right;
+    margin-bottom: 50px;
+}
+.slogan>img{
+    width: 100%;
+}
+.content .middle .btn-lists{
+    float: right;
+}
+.content .middle .btn-lists .icon-Q{
+    float: right;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url("../public/img/download.png");
+}
+.middle .btn-lists .btn-item{
+    width: 130px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: .15s opacity;
+    background-position: center;
+    box-shadow: 1px 1px 7px 2px rgba(0,0,0,.54);
+}
+.btn-lists .btn-item a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+.btn-lists .btn-item .btn-link{
+    opacity: 1;
+    transition: .15s all;
+}
+.btn-lists .btn-item .btn-hover:hover{
+    opacity: 0.5;
+}
+.btn-lists .btn-item .icon-ios{
+    background-image: url("../public/img/appstore.png");
+}
+.btn-lists .btn-item .icon-android{
+    background-image: url("../public/img/android.png");
+}
+.content .middle .btn-lists .icon-Q img{
+    width: 223px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transform: scale(0.23);
+    transform-origin: top right;
+    transition: .3s all;
+}
+.container .content .footer{
+    width: 100%;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+}
+ .content .footer .nav-warpper{
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    margin-bottom: 16px;
+}
+.footer .nav-warpper a{
+    color: #fff;
+    padding: 0 7px;
+}
+.footer .nav-warpper .border-left{
+    border-left: 1px solid #fff;
+}
+.footer .nav-warpper .border-right{
+    border-right: 1px solid #fff;
+}
+.footer .gongan-box{
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+.footer .copyright-info p{
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+}
+.footer .copyright-info a{
+    color: #fff;
+}
+.footer .copyright-info .gongan-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

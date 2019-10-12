@@ -1,0 +1,58 @@
+@import "normalize.css";
+
+/*:root ->获取根元素html*/
+/*里面定义css变量*/
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    /*禁止用户鼠标在页面上选中字图片等*/
+    user-select: none;
+    /*webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色用数值调节*/
+    -webkit-tap-highlight-color: transparent;
+    background: var(--color-background);
+    color: var(--color-text);
+    /*rem vw/vh*/
+    width: 100vm;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+/*清除浮动*/
+.clear-fix::after{
+    clear:both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+    /*zoom这个属性是ie专有属性，除了设置或者检索对象的缩放比例之外，它还有可以触发ie的haslayout属性
+    清除浮动，清除margin重叠等作用。 不过值得注意的一点就是火狐浏览器不支持zoom属性，但是在webkit
+    内核浏览器中zoom这个属性也是可以被支持的。*/
+    /*zoom: 1;*/
+.clearFloat::after {
+    content:'';
+    display:block;
+    clear:both
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
